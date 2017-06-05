@@ -1,0 +1,29 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+    - POSTGRES_PASSWORD=123123
+    - PGDATA=/DB
+    ports:
+    - "5432:5432"
+    volumes:
+    - /home/azaz/ShiftUpFiles/DB:/DB
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    environment:
+    - NEO4J_AUTH=none
+    - NEO4J_dbms_memory_pagecache_size=1024M 
+    - NEO4J_dbms_memory_heap_maxSize=1024M
+    ports:
+    - "7474:7474"
+    - "7687:7687"
+    volumes:
+    - /home/azaz/ShiftUpFiles/neo4j/data:/data
+    - /home/azaz/ShiftUpFiles/neo4j/logs:/logs
+    ulimits:
+      nofile:
+        soft: 20000
+        hard: 40000

@@ -1,0 +1,79 @@
+[2017-03-25 23:45:26.530,Pyro4,INFO] Pyro log configured using built-in defaults, level=DEBUG
+[2017-03-25 23:45:26.621,Pyro4.core,DEBUG] exposing all members of <class 'Pyro4.core.DaemonObject'>
+[2017-03-25 23:45:26.622,Pyro4.core,DEBUG] exposing all members of <class '__main__.NameServer'>
+[2017-03-25 23:45:26.632,Pyro4.naming,DEBUG] using volatile in-memory dict storage
+[2017-03-25 23:45:26.632,Pyro4.threadpoolserver,INFO] starting thread pool socketserver
+[2017-03-25 23:45:26.636,Pyro4.threadpool,DEBUG] worker pool created with initial size 4
+[2017-03-25 23:45:26.637,Pyro4.core,DEBUG] daemon created on 192.168.0.11:9090 - IPv4 (pid 4253)
+[2017-03-25 23:45:26.637,Pyro4.core,DEBUG] accepted serializers: {'serpent', 'marshal', 'json', 'pickle'}
+[2017-03-25 23:45:26.637,Pyro4.core,DEBUG] pyro protocol version: 48  pickle version: 3
+[2017-03-25 23:45:26.638,Pyro4.naming,DEBUG] autoclean not enabled
+[2017-03-25 23:45:26.638,Pyro4.naming,INFO] nameserver daemon created
+[2017-03-25 23:45:26.638,Pyro4.naming,INFO] ns broadcast server created on 0.0.0.0:9091 - IPv4
+[2017-03-25 23:45:26.638,Pyro4.naming,DEBUG] broadcast server loop running in own thread
+[2017-03-25 23:45:26.639,Pyro4.core,INFO] daemon 192.168.0.11:9090 entering requestloop
+[2017-03-25 23:45:26.639,Pyro4.threadpoolserver,DEBUG] threadpool server requestloop
+[2017-03-25 23:45:31.268,Pyro4.naming,DEBUG] responding to broadcast request from 192.168.0.11: interface 192.168.0.11
+[2017-03-25 23:45:31.269,Pyro4.naming,DEBUG] responding to broadcast request from 127.0.0.1: interface 192.168.0.11
+[2017-03-25 23:45:31.350,Pyro4.threadpoolserver,DEBUG] connected ('192.168.0.11', 57018)
+[2017-03-25 23:45:31.350,Pyro4.threadpool,DEBUG] worker counts: 1 busy, 3 idle
+[2017-03-25 23:45:31.351,Pyro4.core,DEBUG] daemon handshake received: msgtype=1 flags=0x10 ser=1 seq=0 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n{'object':'Pyro.NameServer','handshake':'hello'}"
+[2017-03-25 23:45:31.352,Pyro4.core,DEBUG] daemon handshake response: msgtype=2 flags=0x10 ser=1 seq=0 corr=10bf36fe-690b-42ad-94a4-2429531149ec
+annotations={'CORR': b'\x10\xbf6\xfei\x0bB\xad\x94\xa4$)S\x11I\xec'}
+data=b"# serpent utf-8 python3.2\n{'handshake':'hello','meta':{'methods':['remove','list','register','lookup','count','set_metadata','ping'],'attrs':[],'oneway':[]}}"
+[2017-03-25 23:45:31.353,Pyro4.core,DEBUG] daemon wiredata received: msgtype=4 flags=0x0 ser=1 seq=1 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n('Pyro.NameServer','remove',('gensim.lda_dispatcher',),{})"
+[2017-03-25 23:45:31.353,Pyro4.core,DEBUG] daemon wiredata sending: msgtype=5 flags=0x0 ser=1 seq=1 corr=fb23d8c8-a045-42b5-8f68-9ed87f2b6730
+annotations={'CORR': b'\xfb#\xd8\xc8\xa0EB\xb5\x8fh\x9e\xd8\x7f+g0'}
+data=b'# serpent utf-8 python3.2\n0'
+[2017-03-25 23:45:31.354,Pyro4.core,DEBUG] daemon wiredata received: msgtype=4 flags=0x0 ser=1 seq=2 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n('Pyro.NameServer','register',('gensim.lda_dispatcher',{'state':('PYRO','gensim.lda_dispatcher',None,'192.168.0.11',38681),'__class__':'Pyro4.core.URI'}),{})"
+[2017-03-25 23:45:31.355,Pyro4.core,DEBUG] daemon wiredata sending: msgtype=5 flags=0x0 ser=1 seq=2 corr=ece3894a-69c4-4937-9ace-b7fffe019136
+annotations={'CORR': b'\xec\xe3\x89Ji\xc4I7\x9a\xce\xb7\xff\xfe\x01\x916'}
+data=b'# serpent utf-8 python3.2\nNone'
+[2017-03-25 23:45:38.562,Pyro4.naming,DEBUG] responding to broadcast request from 192.168.0.11: interface 192.168.0.11
+[2017-03-25 23:45:38.562,Pyro4.naming,DEBUG] responding to broadcast request from 127.0.0.1: interface 192.168.0.11
+[2017-03-25 23:45:38.563,Pyro4.threadpoolserver,DEBUG] connected ('192.168.0.11', 57050)
+[2017-03-25 23:45:38.563,Pyro4.threadpool,DEBUG] worker counts: 2 busy, 2 idle
+[2017-03-25 23:45:38.563,Pyro4.core,DEBUG] daemon handshake received: msgtype=1 flags=0x10 ser=1 seq=0 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n{'object':'Pyro.NameServer','handshake':'hello'}"
+[2017-03-25 23:45:38.564,Pyro4.core,DEBUG] daemon handshake response: msgtype=2 flags=0x10 ser=1 seq=0 corr=1c1e6e97-5ae4-4e32-9644-42f97f9ee764
+annotations={'CORR': b'\x1c\x1en\x97Z\xe4N2\x96DB\xf9\x7f\x9e\xe7d'}
+data=b"# serpent utf-8 python3.2\n{'handshake':'hello','meta':{'methods':['remove','list','register','lookup','count','set_metadata','ping'],'attrs':[],'oneway':[]}}"
+[2017-03-25 23:45:38.567,Pyro4.core,DEBUG] daemon wiredata received: msgtype=4 flags=0x0 ser=1 seq=1 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n('Pyro.NameServer','list',(),{'prefix':'gensim.lda_dispatcher'})"
+[2017-03-25 23:45:38.568,Pyro4.core,DEBUG] daemon wiredata sending: msgtype=5 flags=0x0 ser=1 seq=1 corr=e93ca67f-2ea0-437b-9131-ea0fc525a10c
+annotations={'CORR': b'\xe9<\xa6\x7f.\xa0C{\x911\xea\x0f\xc5%\xa1\x0c'}
+data=b"# serpent utf-8 python3.2\n{'gensim.lda_dispatcher':'PYRO:gensim.lda_dispatcher@192.168.0.11:38681'}"
+[2017-03-25 23:45:38.575,Pyro4.threadpoolserver,DEBUG] disconnected ('192.168.0.11', 57050)
+[2017-03-25 23:45:38.575,Pyro4.threadpool,DEBUG] worker counts: 1 busy, 3 idle
+[2017-03-25 23:45:42.836,Pyro4.naming,DEBUG] responding to broadcast request from 192.168.0.11: interface 192.168.0.11
+[2017-03-25 23:45:42.836,Pyro4.naming,DEBUG] responding to broadcast request from 127.0.0.1: interface 192.168.0.11
+[2017-03-25 23:45:42.837,Pyro4.threadpoolserver,DEBUG] connected ('192.168.0.11', 57070)
+[2017-03-25 23:45:42.838,Pyro4.threadpool,DEBUG] worker counts: 2 busy, 2 idle
+[2017-03-25 23:45:42.838,Pyro4.core,DEBUG] daemon handshake received: msgtype=1 flags=0x10 ser=1 seq=0 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n{'object':'Pyro.NameServer','handshake':'hello'}"
+[2017-03-25 23:45:42.839,Pyro4.core,DEBUG] daemon handshake response: msgtype=2 flags=0x10 ser=1 seq=0 corr=19fc841d-4637-492e-a842-163819d9ec5e
+annotations={'CORR': b'\x19\xfc\x84\x1dF7I.\xa8B\x168\x19\xd9\xec^'}
+data=b"# serpent utf-8 python3.2\n{'handshake':'hello','meta':{'methods':['remove','list','register','lookup','count','set_metadata','ping'],'attrs':[],'oneway':[]}}"
+[2017-03-25 23:45:42.840,Pyro4.core,DEBUG] daemon wiredata received: msgtype=4 flags=0x0 ser=1 seq=1 corr=?
+annotations={}
+data=b"# serpent utf-8 python3.2\n('Pyro.NameServer','list',(),{'prefix':'gensim.lda_dispatcher'})"
+[2017-03-25 23:45:42.841,Pyro4.core,DEBUG] daemon wiredata sending: msgtype=5 flags=0x0 ser=1 seq=1 corr=cb88fbec-d2fa-40d2-9c34-256215b842db
+annotations={'CORR': b'\xcb\x88\xfb\xec\xd2\xfa@\xd2\x9c4%b\x15\xb8B\xdb'}
+data=b"# serpent utf-8 python3.2\n{'gensim.lda_dispatcher':'PYRO:gensim.lda_dispatcher@192.168.0.11:38681'}"
+[2017-03-25 23:45:42.847,Pyro4.threadpoolserver,DEBUG] disconnected ('192.168.0.11', 57070)
+[2017-03-25 23:45:42.848,Pyro4.threadpool,DEBUG] worker counts: 1 busy, 3 idle
+[2017-03-25 23:45:45.007,Pyro4.threadpoolserver,DEBUG] stopping on break signal
+[2017-03-25 23:45:45.007,Pyro4.core,DEBUG] daemon exits requestloop
+[2017-03-25 23:45:45.008,Pyro4.core,DEBUG] daemon closing
+[2017-03-25 23:45:45.008,Pyro4.threadpool,DEBUG] closing down
+[2017-03-25 23:45:45.209,Pyro4.naming,DEBUG] ns broadcast server closing
+[2017-03-25 23:45:45.210,Pyro4.naming,DEBUG] broadcast server loop terminating
